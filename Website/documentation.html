@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Universal Browser</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Prism.js for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet">
+    
+    <style>
+        .sidebar {
+            height: 100vh;
+            overflow-y: auto;
+            position: sticky;
+            top: 0;
+        }
+        
+        .content-area {
+            padding-left: 2rem;
+        }
+        
+        .nav-link.active {
+            background-color: #667eea !important;
+            color: white !important;
+        }
+        
+        .code-block {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            color: #495057;
+            margin-top: 1.5rem;
+        }
+        
+        .alert-custom {
+            border-left: 4px solid #667eea;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-globe text-primary"></i> Universal Browser
+            </a>
+            <span class="badge bg-primary">Documentação</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 bg-light sidebar">
+                <div class="p-3">
+                    <h5 class="fw-bold">📖 Documentação</h5>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="#introducao">
+                            <i class="fas fa-home"></i> Introdução
+                        </a>
+                        <a class="nav-link" href="#instalacao">
+                            <i class="fas fa-download"></i> Instalação
+                        </a>
+                        <a class="nav-link" href="#primeiros-passos">
+                            <i class="fas fa-play"></i> Primeiros Passos
+                        </a>
+                        <a class="nav-link" href="#perfis">
+                            <i class="fas fa-user-cog"></i> Sistema de Perfis
+                        </a>
+                        <a class="nav-link" href="#comandos">
+                            <i class="fas fa-terminal"></i> Comandos
+                        </a>
+                        <a class="nav-link" href="#navegadores">
+                            <i class="fas fa-globe"></i> Navegadores
+                        </a>
+                        <a class="nav-link" href="#monitoramento">
+                            <i class="fas fa-eye"></i> Monitoramento
+                        </a>
+                        <a class="nav-link" href="#troubleshooting">
+                            <i class="fas fa-wrench"></i> Solução de Problemas
+                        </a>
+                        <a class="nav-link" href="#api">
+                            <i class="fas fa-code"></i> API Reference
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 content-area">
+                <div class="p-4">
+                    
+                    <!-- Introdução -->
+                    <section id="introducao">
+                        <h1><i class="fas fa-book-open"></i> Documentação Universal Browser</h1>
+                        <p class="lead">
+                            Guia completo para usar o Universal Browser, a solução definitiva para sites que fecham inesperadamente.
+                        </p>
+
+                        <div class="alert alert-info alert-custom">
+                            <h5><i class="fas fa-info-circle"></i> O que é o Universal Browser?</h5>
+                            <p>
+                                O Universal Browser é uma ferramenta que monitora e mantém sites abertos automaticamente, 
+                                especialmente útil para sites como iFood, WhatsApp Web, e outros que tendem a fechar inesperadamente.
+                            </p>
+                        </div>
+
+                        <h3>Principais Características</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success"></i> 
+                                <strong>Sistema de Perfis:</strong> Crie configurações personalizadas para cada site
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success"></i> 
+                                <strong>Multi-Navegador:</strong> Suporte para Chrome, Edge, Firefox, IE e IE Tab
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success"></i> 
+                                <strong>Monitoramento 24/7:</strong> Detecção automática e reinicialização
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-success"></i> 
+                                <strong>Interface Múltipla:</strong> GUI, linha de comando e batch
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Instalação -->
+                    <section id="instalacao">
+                        <h2><i class="fas fa-download"></i> Instalação</h2>
+
+                        <h3>Requisitos do Sistema</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Sistema Operacional</h5>
+                                        <ul>
+                                            <li>Windows 10 ou superior</li>
+                                            <li>Windows Server 2016+</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Dependências</h5>
+                                        <ul>
+                                            <li>PowerShell 5.1+</li>
+                                            <li>Pelo menos um navegador instalado</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Métodos de Instalação</h3>
+
+                        <div class="accordion" id="installAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#install1">
+                                        <i class="fas fa-magic me-2"></i> Instalação Automática (Recomendada)
+                                    </button>
+                                </h2>
+                                <div id="install1" class="accordion-collapse collapse show" data-bs-parent="#installAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Baixe <code>UniversalBrowser-Installer.ps1</code></li>
+                                            <li>Execute com privilégios de administrador</li>
+                                            <li>Siga as instruções na tela</li>
+                                        </ol>
+                                        <div class="code-block">
+                                            <code>powershell.exe -ExecutionPolicy Bypass -File UniversalBrowser-Installer.ps1</code>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#install2">
+                                        <i class="fas fa-archive me-2"></i> Versão Portátil
+                                    </button>
+                                </h2>
+                                <div id="install2" class="accordion-collapse collapse" data-bs-parent="#installAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Baixe <code>UniversalBrowser-Portable.zip</code></li>
+                                            <li>Extraia em uma pasta de sua escolha</li>
+                                            <li>Execute <code>EXECUTAR.bat</code></li>
+                                        </ol>
+                                        <div class="alert alert-info">
+                                            <i class="fas fa-info-circle"></i> 
+                                            A versão portátil não requer instalação e pode ser executada de qualquer local.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Primeiros Passos -->
+                    <section id="primeiros-passos">
+                        <h2><i class="fas fa-play"></i> Primeiros Passos</h2>
+
+                        <h3>Configuração Inicial</h3>
+                        <p>Após a instalação, você precisa configurar a política de execução do PowerShell:</p>
+                        
+                        <div class="code-block">
+                            <pre><code class="language-powershell">Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre>
+                        </div>
+
+                        <h3>Primeira Execução</h3>
+                        <p>Existem várias formas de iniciar o Universal Browser:</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-mouse-pointer"></i> Interface Gráfica</h5>
+                                        <p>Execute pelo Menu Iniciar ou clique no atalho da área de trabalho.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-window-maximize"></i> Menu Batch</h5>
+                                        <p>Execute <code>UniversalBrowser.bat</code> para um menu interativo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-terminal"></i> Linha de Comando</h5>
+                                        <p>Use PowerShell para controle total e automação.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sistema de Perfis -->
+                    <section id="perfis">
+                        <h2><i class="fas fa-user-cog"></i> Sistema de Perfis</h2>
+
+                        <p>Os perfis são a base do Universal Browser. Cada perfil contém as configurações específicas para um site.</p>
+
+                        <h3>Criando um Perfil</h3>
+                        <div class="code-block">
+                            <pre><code class="language-powershell">.\UniversalBrowser.ps1 -CreateProfile</code></pre>
+                        </div>
+
+                        <p>O sistema perguntará:</p>
+                        <ul>
+                            <li><strong>Nome do perfil:</strong> Identificador único</li>
+                            <li><strong>URL do site:</strong> Endereço completo</li>
+                            <li><strong>Intervalo de monitoramento:</strong> Em segundos (padrão: 30)</li>
+                            <li><strong>Navegador preferido:</strong> Chrome, Edge, Firefox, IE, IETab ou Auto</li>
+                            <li><strong>Monitoramento:</strong> Habilitar/desabilitar</li>
+                        </ul>
+
+                        <h3>Perfis Pré-configurados</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Perfil</th>
+                                        <th>Site</th>
+                                        <th>Navegador</th>
+                                        <th>Monitoramento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>iFood</strong></td>
+                                        <td>gestordepedidos.ifood.com.br</td>
+                                        <td>IE Tab</td>
+                                        <td>30s</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>WhatsApp Web</strong></td>
+                                        <td>web.whatsapp.com</td>
+                                        <td>Chrome</td>
+                                        <td>60s</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Gmail</strong></td>
+                                        <td>mail.google.com</td>
+                                        <td>Auto</td>
+                                        <td>Desabilitado</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Office 365</strong></td>
+                                        <td>portal.office.com</td>
+                                        <td>Edge</td>
+                                        <td>30s</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Estrutura do Perfil</h3>
+                        <div class="code-block">
+                            <pre><code class="language-json">{
+  "Name": "MeuSite",
+  "Url": "https://exemplo.com",
+  "MonitorInterval": 30,
+  "PreferredBrowser": "Chrome",
+  "WindowTitle": "Meu Site",
+  "NoMonitoring": false
+}</code></pre>
+                        </div>
+                    </section>
+
+                    <!-- Comandos -->
+                    <section id="comandos">
+                        <h2><i class="fas fa-terminal"></i> Referência de Comandos</h2>
+
+                        <h3>Comandos Básicos</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Listar Perfis</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <code>.\UniversalBrowser.ps1 -ListProfiles</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Criar Perfil</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <code>.\UniversalBrowser.ps1 -CreateProfile</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Execução de Perfis</h3>
+                        <div class="code-block">
+                            <pre><code class="language-powershell"># Executar perfil específico
+.\UniversalBrowser.ps1 -ProfileName "iFood"
+
+# Executar com navegador específico
+.\UniversalBrowser.ps1 -ProfileName "iFood" -UseChrome
+
+# Executar sem monitoramento
+.\UniversalBrowser.ps1 -ProfileName "iFood" -NoMonitoring</code></pre>
+                        </div>
+
+                        <h3>URLs Diretas</h3>
+                        <div class="code-block">
+                            <pre><code class="language-powershell"># Abrir URL diretamente
+.\UniversalBrowser.ps1 -Url "https://exemplo.com"
+
+# Com navegador específico
+.\UniversalBrowser.ps1 -Url "https://exemplo.com" -UseEdge
+
+# Com monitoramento customizado
+.\UniversalBrowser.ps1 -Url "https://exemplo.com" -MonitorInterval 60</code></pre>
+                        </div>
+
+                        <h3>Parâmetros Disponíveis</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Parâmetro</th>
+                                        <th>Tipo</th>
+                                        <th>Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>-Url</code></td>
+                                        <td>String</td>
+                                        <td>URL para abrir diretamente</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-ProfileName</code></td>
+                                        <td>String</td>
+                                        <td>Nome do perfil para executar</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-MonitorInterval</code></td>
+                                        <td>Int</td>
+                                        <td>Intervalo de monitoramento em segundos</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-NoMonitoring</code></td>
+                                        <td>Switch</td>
+                                        <td>Desabilita monitoramento automático</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-UseChrome</code></td>
+                                        <td>Switch</td>
+                                        <td>Força uso do Google Chrome</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-UseEdge</code></td>
+                                        <td>Switch</td>
+                                        <td>Força uso do Microsoft Edge</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-UseFirefox</code></td>
+                                        <td>Switch</td>
+                                        <td>Força uso do Firefox</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>-UseIE</code></td>
+                                        <td>Switch</td>
+                                        <td>Força uso do Internet Explorer</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Solução de Problemas -->
+                    <section id="troubleshooting">
+                        <h2><i class="fas fa-wrench"></i> Solução de Problemas</h2>
+
+                        <div class="accordion" id="troubleshootingAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#problem1">
+                                        <i class="fas fa-exclamation-triangle me-2 text-warning"></i> 
+                                        Script não executa
+                                    </button>
+                                </h2>
+                                <div id="problem1" class="accordion-collapse collapse show">
+                                    <div class="accordion-body">
+                                        <h5>Causa mais comum: Política de execução restritiva</h5>
+                                        <p><strong>Solução:</strong></p>
+                                        <div class="code-block">
+                                            <pre><code class="language-powershell"># Verifique a política atual
+Get-ExecutionPolicy
+
+# Configure para permitir scripts
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre>
+                                        </div>
+                                        <div class="alert alert-info">
+                                            <i class="fas fa-shield-alt"></i> 
+                                            Esta configuração é segura e permite apenas scripts assinados ou locais.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#problem2">
+                                        <i class="fas fa-window-close me-2 text-danger"></i> 
+                                        Site ainda fecha mesmo com monitoramento
+                                    </button>
+                                </h2>
+                                <div id="problem2" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <h5>Possíveis soluções:</h5>
+                                        <ul>
+                                            <li><strong>Tente outro navegador:</strong> <code>-UseChrome</code>, <code>-UseEdge</code>, <code>-UseIE</code></li>
+                                            <li><strong>Desabilite extensões:</strong> Bloqueadores podem interferir</li>
+                                            <li><strong>Execute como Administrador:</strong> Alguns sites requerem privilégios elevados</li>
+                                            <li><strong>Verifique antivírus:</strong> Pode estar bloqueando o script</li>
+                                            <li><strong>Reduza o intervalo:</strong> <code>-MonitorInterval 10</code></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#problem3">
+                                        <i class="fas fa-puzzle-piece me-2 text-info"></i> 
+                                        IE Tab Helper não funciona
+                                    </button>
+                                </h2>
+                                <div id="problem3" class="accordion-collapse collapse">
+                                    <div class="accordion-body">
+                                        <h5>Verificações necessárias:</h5>
+                                        <ol>
+                                            <li><strong>Instalação do IE Tab:</strong> Verifique se a extensão está instalada no navegador</li>
+                                            <li><strong>Caminho correto:</strong> Confirme se existe: <code>C:\Users\likel\AppData\Local\IE Tab\18.8.19.1\ietabhelper.exe</code></li>
+                                            <li><strong>Permissões:</strong> Execute como administrador</li>
+                                            <li><strong>Alternativa:</strong> Use <code>-UseChrome</code> ou outro navegador</li>
+                                        </ol>
+                                        
+                                        <h5>Reinstalação do IE Tab:</h5>
+                                        <ol>
+                                            <li>Abra o Chrome</li>
+                                            <li>Vá para Chrome Web Store</li>
+                                            <li>Procure por "IE Tab"</li>
+                                            <li>Instale e configure</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="alert alert-warning">
+                                <h5><i class="fas fa-life-ring"></i> Precisa de mais ajuda?</h5>
+                                <ul class="mb-0">
+                                    <li>Verifique os logs em: <code>C:\UniversalBrowser\Logs\</code></li>
+                                    <li>Execute o diagnóstico: <code>.\setup-ifood.ps1</code></li>
+                                    <li>Entre em contato: suporte@universalbrowser.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+    <script>
+        // Smooth scrolling for sidebar links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all links
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                
+                // Add active class to clicked link
+                this.classList.add('active');
+                
+                // Scroll to section
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Highlight current section in sidebar
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

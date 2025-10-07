@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "releaseDate": "2025-10-07",
+  "buildNumber": "2025.10.07.001",
+  "changelog": "https://universalbrowser.vercel.app/changelog",
+  "files": {
+    "portable": {
+      "filename": "UniversalBrowser-Portable.zip",
+      "size": "10.04 KB",
+      "description": "Versão portátil - não requer instalação",
+      "requirements": "Windows 10/11, PowerShell 5.1+",
+      "sha256": "placeholder_hash_will_be_generated"
+    },
+    "installer": {
+      "filename": "UniversalBrowser-Installer.ps1",
+      "size": "5.2 KB", 
+      "description": "Instalador automático PowerShell",
+      "requirements": "Windows 10/11, PowerShell 5.1+, Privilégios de Admin",
+      "sha256": "placeholder_hash_will_be_generated"
+    }
+  },
+  "features": [
+    "Sistema de perfis ilimitados",
+    "Suporte a 5+ navegadores",
+    "Monitoramento automático 24/7",
+    "Interface múltipla (GUI/CLI/Batch)",
+    "Logs detalhados por perfil",
+    "Instalação automática no sistema",
+    "Perfis pré-configurados (iFood, WhatsApp Web, etc.)"
+  ],
+  "compatibility": {
+    "os": ["Windows 10", "Windows 11", "Windows Server 2016+"],
+    "powershell": "5.1+",
+    "browsers": ["Chrome", "Edge", "Firefox", "Internet Explorer", "IE Tab"],
+    "architecture": ["x64", "x86"]
+  },
+  "support": {
+    "documentation": "https://universalbrowser.vercel.app/documentation",
+    "issues": "https://github.com/juliocamposmachado/UniversalBrowser/issues",
+    "email": "suporte@universalbrowser.com"
+  }
+}

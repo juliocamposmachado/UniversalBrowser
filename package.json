@@ -1,0 +1,31 @@
+{
+  "name": "universal-browser",
+  "version": "1.0.0",
+  "description": "Solução definitiva para sites que fecham inesperadamente",
+  "main": "Website/index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Static site deployed'",
+    "test": "echo 'No tests configured'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliocamposmachado/UniversalBrowser.git"
+  },
+  "keywords": [
+    "ifood",
+    "browser",
+    "monitoring",
+    "automation",
+    "whatsapp",
+    "universal",
+    "powershell",
+    "windows"
+  ],
+  "author": "Julio Campos Machado",
+  "license": "MIT",
+  "homepage": "https://universalbrowser.vercel.app",
+  "engines": {
+    "node": ">=14"
+  }
+}

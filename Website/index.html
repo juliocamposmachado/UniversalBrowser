@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Browser - Solução para Sites que Fecham</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+        
+        .download-btn {
+            font-size: 1.2rem;
+            padding: 15px 40px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .testimonial-card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .bg-light-custom {
+            background-color: #f8f9fa;
+        }
+        
+        .text-primary-custom {
+            color: #667eea !important;
+        }
+        
+        .stats-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-primary-custom" href="#home">
+                <i class="fas fa-globe"></i> Universal Browser
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">Como Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentation">Documentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support">Suporte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Nunca Mais Perca o Trabalho por Sites que Fecham!
+                    </h1>
+                    <p class="lead mb-4">
+                        O Universal Browser é a solução definitiva para sites como iFood, WhatsApp Web e outros que fecham inesperadamente. 
+                        Sistema inteligente de monitoramento e recuperação automática.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#download" class="btn btn-light download-btn">
+                            <i class="fas fa-download"></i> Download Grátis
+                        </a>
+                        <a href="#how-it-works" class="btn btn-outline-light download-btn">
+                            <i class="fas fa-play"></i> Como Funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-shield-alt" style="font-size: 15rem; opacity: 0.3;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="stats-number">100+</div>
+                    <p class="text-muted">Sites Suportados</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">5+</div>
+                    <p class="text-muted">Navegadores</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">24/7</div>
+                    <p class="text-muted">Monitoramento</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">0$</div>
+                    <p class="text-muted">Custo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold">Recursos Poderosos</h2>
+                    <p class="lead text-muted">
+                        Tudo o que você precisa para manter seus sites funcionando 24/7
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cog feature-icon"></i>
+                            <h4 class="fw-bold">Sistema de Perfis</h4>
+                            <p class="text-muted">
+                                Crie perfis personalizados para cada site com configurações únicas. 
+                                iFood, WhatsApp Web, Gmail e muito mais!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-eye feature-icon"></i>
+                            <h4 class="fw-bold">Monitoramento Inteligente</h4>
+                            <p class="text-muted">
+                                Detecção automática quando o site fecha e reinicialização instantânea. 
+                                Configuração de intervalos personalizáveis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe feature-icon"></i>
+                            <h4 class="fw-bold">Multi-Navegador</h4>
+                            <p class="text-muted">
+                                Suporte para Chrome, Edge, Firefox, Internet Explorer, IE Tab 
+                                e navegadores personalizados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-magic feature-icon"></i>
+                            <h4 class="fw-bold">Instalação Automática</h4>
+                            <p class="text-muted">
+                                Instalador inteligente que configura tudo automaticamente. 
+                                Atalhos, registry e associações de arquivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line feature-icon"></i>
+                            <h4 class="fw-bold">Logs Detalhados</h4>
+                            <p class="text-muted">
+                                Sistema avançado de logs por perfil. Acompanhe tudo o que acontece 
+                                com relatórios detalhados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 testimonial-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-rocket feature-icon"></i>
+                            <h4 class="fw-bold">Interface Intuitiva</h4>
+                            <p class="text-muted">
+                                Interface gráfica simples e linha de comando avançada. 
+                                Para usuários iniciantes e profissionais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="section-padding bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold">Como Funciona</h2>
+                    <p class="lead text-muted">
+                        Processo simples em 3 passos para resolver seus problemas
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="bg-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-download text-white fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold">1. Download e Instalação</h4>
+                        <p class="text-muted">
+                            Baixe o Universal Browser e execute o instalador. 
+                            Tudo será configurado automaticamente em segundos.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="bg-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-cogs text-white fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold">2. Configure Seus Sites</h4>
+                        <p class="text-muted">
+                            Crie perfis para seus sites favoritos ou use os pré-configurados: 
+                            iFood, WhatsApp Web, Gmail e Office 365.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="bg-primary-custom rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-shield-alt text-white fa-2x"></i>
+                        </div>
+                        <h4 class="fw-bold">3. Trabalhe Sem Preocupações</h4>
+                        <p class="text-muted">
+                            O Universal Browser monitora seus sites 24/7 e os reinicia 
+                            automaticamente se fecharem. Simples assim!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold">O Que Nossos Usuários Dizem</h2>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted">
+                                "Finalmente posso trabalhar no iFood sem me preocupar com o site fechando! 
+                                O Universal Browser salvou meu negócio."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Maria Silva</h6>
+                                    <small class="text-muted">Restaurante Dona Maria</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted">
+                                "Uso para WhatsApp Web e nunca mais perdi mensagens importantes. 
+                                A configuração é super simples e funciona perfeitamente."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">João Santos</h6>
+                                    <small class="text-muted">Vendedor Online</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="text-muted">
+                                "Ferramenta indispensável para quem trabalha com sistemas web. 
+                                O suporte técnico é excelente e sempre disponível."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle me-3">
+                                <div>
+                                    <h6 class="mb-0">Ana Costa</h6>
+                                    <small class="text-muted">Gerente de TI</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section-padding bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Download Universal Browser</h2>
+                    <p class="lead text-muted mb-5">
+                        Versão 1.0.0 - Compatível com Windows 10/11 - Totalmente Gratuito
+                    </p>
+                    
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-md-4">
+                            <a href="downloads/UniversalBrowser-Installer.exe" class="btn btn-primary btn-lg w-100 download-btn">
+                                <i class="fas fa-download"></i>
+                                <div class="mt-2">
+                                    <strong>Instalador Automático</strong><br>
+                                    <small>Recomendado</small>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <a href="downloads/UniversalBrowser-Portable.zip" class="btn btn-outline-primary btn-lg w-100 download-btn">
+                                <i class="fas fa-file-archive"></i>
+                                <div class="mt-2">
+                                    <strong>Versão Portátil</strong><br>
+                                    <small>Sem instalação</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="text-muted">
+                            <i class="fas fa-shield-alt text-success"></i>
+                            Software livre de vírus e malware
+                            <br>
+                            <i class="fas fa-lock text-success"></i>
+                            Não coleta dados pessoais
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-globe"></i> Universal Browser
+                    </h5>
+                    <p class="text-muted">
+                        Solução definitiva para sites que fecham inesperadamente. 
+                        Mantenha seu trabalho sempre funcionando.
+                    </p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="documentation.html" class="text-muted text-decoration-none">📖 Documentação</a></li>
+                        <li><a href="faq.html" class="text-muted text-decoration-none">❓ FAQ</a></li>
+                        <li><a href="changelog.html" class="text-muted text-decoration-none">📋 Changelog</a></li>
+                        <li><a href="support.html" class="text-muted text-decoration-none">🛠️ Suporte</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Suporte</h5>
+                    <ul class="list-unstyled">
+                        <li class="text-muted">📧 suporte@universalbrowser.com</li>
+                        <li class="text-muted">🌐 Windows 10/11</li>
+                        <li class="text-muted">⚡ Resposta em 24h</li>
+                        <li class="text-muted">🆓 Totalmente Gratuito</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">
+                        © 2025 Universal Browser. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-muted">
+                        Versão 1.0.0 - Build 2025.10.07
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+        
+        // Download tracking
+        document.querySelectorAll('a[href*="downloads/"]').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Download iniciado:', this.href);
+                // Aqui você pode adicionar analytics
+            });
+        });
+    </script>
+</body>
+</html>

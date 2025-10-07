@@ -1,0 +1,39 @@
+﻿{
+    "Profiles":  {
+                     "WhatsApp Web":  {
+                                          "Name":  "WhatsApp Web",
+                                          "PreferredBrowser":  "Chrome",
+                                          "NoMonitoring":  false,
+                                          "WindowTitle":  "WhatsApp Web",
+                                          "MonitorInterval":  60,
+                                          "Url":  "https://web.whatsapp.com"
+                                      },
+                     "Gmail":  {
+                                   "Name":  "Gmail",
+                                   "PreferredBrowser":  "Auto",
+                                   "NoMonitoring":  true,
+                                   "WindowTitle":  "Gmail",
+                                   "MonitorInterval":  60,
+                                   "Url":  "https://mail.google.com"
+                               },
+                     "iFood":  {
+                                   "Name":  "iFood",
+                                   "PreferredBrowser":  "IETab",
+                                   "NoMonitoring":  false,
+                                   "WindowTitle":  "iFood Gestor de Pedidos",
+                                   "MonitorInterval":  30,
+                                   "Url":  "https://gestordepedidos.ifood.com.br/#/home/orders/now"
+                               },
+                     "Office 365":  {
+                                        "Name":  "Office 365",
+                                        "PreferredBrowser":  "Edge",
+                                        "NoMonitoring":  false,
+                                        "WindowTitle":  "Office 365",
+                                        "MonitorInterval":  30,
+                                        "Url":  "https://portal.office.com"
+                                    }
+                 },
+    "DefaultProfile":  "iFood",
+    "LogLevel":  "INFO",
+    "AutoCreateProfiles":  true
+}

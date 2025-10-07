@@ -1,0 +1,17 @@
+﻿Para criar um instalador EXE real, vocÃª pode usar:
+
+1. PS2EXE (PowerShell to EXE):
+   Install-Module ps2exe
+   Invoke-ps2exe  "C:\UniversalBrowser\Website\downloads\UniversalBrowser-Installer.exe"
+
+2. NSIS (Nullsoft Scriptable Install System):
+   - Baixe em: https://nsis.sourceforge.io/
+   - Use o script .nsi gerado
+
+3. Inno Setup:
+   - Baixe em: https://jrsoftware.org/isinfo.php
+   - Alternativa gratuita ao NSIS
+
+4. WiX Toolset (para MSI):
+   - Para instaladores corporativos
+   - https://wixtoolset.org/
