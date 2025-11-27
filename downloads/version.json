@@ -31,7 +31,7 @@
   "compatibility": {
     "os": ["Windows 10", "Windows 11", "Windows Server 2016+"],
     "powershell": "5.1+",
-    "browsers": ["Chrome", "Edge", "Firefox", "Internet Explorer", "IE Tab"],
+    "browsers": ["Chrome", "Microsoft Edge", "Firefox", "Internet Explorer"],
     "architecture": ["x64", "x86"]
   },
   "support": {

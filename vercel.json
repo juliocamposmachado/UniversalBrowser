@@ -1,36 +1,25 @@
 {
-  "version": 2,
-  "name": "universal-browser",
-  "builds": [
+  "outputDirectory": "Website",
+  "rewrites": [
     {
-      "src": "Website/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/Website/index.html"
+      "source": "/",
+      "destination": "/Website/index.html"
     },
     {
-      "src": "/documentation",
-      "dest": "/Website/documentation.html"
+      "source": "/documentation",
+      "destination": "/Website/documentation.html"
     },
     {
-      "src": "/changelog", 
-      "dest": "/Website/changelog.html"
+      "source": "/changelog", 
+      "destination": "/Website/changelog.html"
     },
     {
-      "src": "/downloads/(.*)",
-      "dest": "/Website/downloads/$1"
+      "source": "/downloads/(.*)",
+      "destination": "/Website/downloads/$1"
     },
     {
-      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "dest": "/Website/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/Website/$1"
+      "source": "/(.*)",
+      "destination": "/Website/$1"
     }
   ],
   "headers": [

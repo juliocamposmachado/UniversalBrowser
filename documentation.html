@@ -97,6 +97,9 @@
                         <a class="nav-link" href="#troubleshooting">
                             <i class="fas fa-wrench"></i> Solução de Problemas
                         </a>
+                        <a class="nav-link" href="#extensao">
+                            <i class="fas fa-puzzle-piece"></i> Extensão do Navegador
+                        </a>
                         <a class="nav-link" href="#api">
                             <i class="fas fa-code"></i> API Reference
                         </a>
@@ -131,7 +134,7 @@
                             </li>
                             <li class="list-group-item">
                                 <i class="fas fa-check-circle text-success"></i> 
-                                <strong>Multi-Navegador:</strong> Suporte para Chrome, Edge, Firefox, IE e IE Tab
+                                <strong>Multi-Navegador:</strong> Suporte para Chrome, Microsoft Edge, Firefox e Internet Explorer
                             </li>
                             <li class="list-group-item">
                                 <i class="fas fa-check-circle text-success"></i> 
@@ -297,7 +300,7 @@
                                     <tr>
                                         <td><strong>iFood</strong></td>
                                         <td>gestordepedidos.ifood.com.br</td>
-                                        <td>IE Tab</td>
+                                        <td>Microsoft Edge</td>
                                         <td>30s</td>
                                     </tr>
                                     <tr>
@@ -443,6 +446,159 @@
                         </div>
                     </section>
 
+                    <!-- Extensão do Navegador -->
+                    <section id="extensao">
+                        <h2><i class="fas fa-puzzle-piece"></i> Extensão do Navegador</h2>
+
+                        <div class="alert alert-success alert-custom">
+                            <h5><i class="fas fa-star"></i> Nova Funcionalidade!</h5>
+                            <p>
+                                Além da versão desktop, agora o Universal Browser está disponível como extensão 
+                                para navegadores baseados em Chromium (Chrome, Edge, Brave, etc.).
+                            </p>
+                        </div>
+
+                        <h3>Características da Extensão</h3>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-desktop text-primary"></i> Interface Moderna</h5>
+                                        <ul>
+                                            <li>Popup de 400x500px</li>
+                                            <li>3 abas: Monitor, Perfis, Configurações</li>
+                                            <li>Design responsivo</li>
+                                            <li>Tema com gradiente</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5><i class="fas fa-cogs text-success"></i> Funcionalidades</h5>
+                                        <ul>
+                                            <li>Sistema de perfis ilimitados</li>
+                                            <li>Monitoramento automático</li>
+                                            <li>Recuperação de abas</li>
+                                            <li>Estatísticas em tempo real</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Instalação da Extensão</h3>
+                        
+                        <div class="accordion" id="extensionAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ext1">
+                                        <i class="fas fa-download me-2"></i> Instalação Manual (Para Teste)
+                                    </button>
+                                </h2>
+                                <div id="ext1" class="accordion-collapse collapse show" data-bs-parent="#extensionAccordion">
+                                    <div class="accordion-body">
+                                        <ol>
+                                            <li>Baixe <a href="downloads/universal-browser-extension.zip">universal-browser-extension.zip</a></li>
+                                            <li>Extraia o arquivo ZIP</li>
+                                            <li>Abra Chrome/Edge e vá para <code>chrome://extensions/</code> ou <code>edge://extensions/</code></li>
+                                            <li>Ative o "Modo do desenvolvedor"</li>
+                                            <li>Clique em "Carregar sem compactação"</li>
+                                            <li>Selecione a pasta extraída</li>
+                                        </ol>
+                                        
+                                        <div class="alert alert-info">
+                                            <i class="fas fa-info-circle"></i> 
+                                            A instalação manual é ideal para testes. Em breve estará disponível na Chrome Web Store.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ext2">
+                                        <i class="fab fa-chrome me-2"></i> Chrome Web Store (Em Breve)
+                                    </button>
+                                </h2>
+                                <div id="ext2" class="accordion-collapse collapse" data-bs-parent="#extensionAccordion">
+                                    <div class="accordion-body">
+                                        <p>A extensão estará disponível na Chrome Web Store em breve para instalação com um clique.</p>
+                                        
+                                        <div class="d-flex gap-3">
+                                            <div class="badge bg-success">Em desenvolvimento</div>
+                                            <div class="badge bg-info">Chrome Web Store</div>
+                                            <div class="badge bg-warning">Edge Add-ons</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Como Usar a Extensão</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <h5><i class="fas fa-mouse-pointer text-primary"></i> 1. Clique no Ícone</h5>
+                                    <p class="text-muted">Clique no ícone da extensão na barra de ferramentas do navegador.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <h5><i class="fas fa-plus text-success"></i> 2. Adicione Perfis</h5>
+                                    <p class="text-muted">Use os perfis pré-configurados ou crie novos personalizados.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center p-3 border rounded">
+                                    <h5><i class="fas fa-shield-alt text-warning"></i> 3. Monitoramento Ativo</h5>
+                                    <p class="text-muted">A extensão monitora automaticamente seus sites favoritos.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Perfis Pré-configurados na Extensão</h3>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>Ícone</th>
+                                        <th>Nome</th>
+                                        <th>URL</th>
+                                        <th>Descrição</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>🍕</td>
+                                        <td><strong>iFood Gestor</strong></td>
+                                        <td>gestordepedidos.ifood.com.br</td>
+                                        <td>Gerenciamento de pedidos para restaurantes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>💬</td>
+                                        <td><strong>WhatsApp Web</strong></td>
+                                        <td>web.whatsapp.com</td>
+                                        <td>WhatsApp para desktop via navegador</td>
+                                    </tr>
+                                    <tr>
+                                        <td>📧</td>
+                                        <td><strong>Gmail</strong></td>
+                                        <td>mail.google.com</td>
+                                        <td>Cliente de email do Google</td>
+                                    </tr>
+                                    <tr>
+                                        <td>📊</td>
+                                        <td><strong>Office 365</strong></td>
+                                        <td>portal.office.com</td>
+                                        <td>Suíte de produtividade da Microsoft</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
                     <!-- Solução de Problemas -->
                     <section id="troubleshooting">
                         <h2><i class="fas fa-wrench"></i> Solução de Problemas</h2>
@@ -498,27 +654,32 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</code></pre
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#problem3">
-                                        <i class="fas fa-puzzle-piece me-2 text-info"></i> 
-                                        IE Tab Helper não funciona
+                                        <i class="fas fa-cog me-2 text-info"></i> 
+                                        Configurando Microsoft Edge
                                     </button>
                                 </h2>
                                 <div id="problem3" class="accordion-collapse collapse">
                                     <div class="accordion-body">
-                                        <h5>Verificações necessárias:</h5>
+                                        <h5>Configurações recomendadas do Edge:</h5>
                                         <ol>
-                                            <li><strong>Instalação do IE Tab:</strong> Verifique se a extensão está instalada no navegador</li>
-                                            <li><strong>Caminho correto:</strong> Confirme se existe: <code>C:\Users\likel\AppData\Local\IE Tab\18.8.19.1\ietabhelper.exe</code></li>
-                                            <li><strong>Permissões:</strong> Execute como administrador</li>
-                                            <li><strong>Alternativa:</strong> Use <code>-UseChrome</code> ou outro navegador</li>
+                                            <li><strong>Cookies:</strong> Acesse <a href="edge://settings/cookies" target="_blank">edge://settings/cookies</a> e configure para permitir cookies de terceiros</li>
+                                            <li><strong>Sites seguros:</strong> Adicione seus sites à lista de sites confiáveis</li>
+                                            <li><strong>Pop-ups:</strong> Configure <a href="edge://settings/content/popups" target="_blank">edge://settings/content/popups</a> para permitir pop-ups do iFood</li>
+                                            <li><strong>JavaScript:</strong> Certifique-se de que JavaScript está habilitado</li>
                                         </ol>
                                         
-                                        <h5>Reinstalação do IE Tab:</h5>
+                                        <h5>Para problemas de compatibilidade:</h5>
                                         <ol>
-                                            <li>Abra o Chrome</li>
-                                            <li>Vá para Chrome Web Store</li>
-                                            <li>Procure por "IE Tab"</li>
-                                            <li>Instale e configure</li>
+                                            <li>Acesse <a href="edge://settings/defaultBrowser" target="_blank">edge://settings/defaultBrowser</a></li>
+                                            <li>Configure o Edge como navegador padrão se necessário</li>
+                                            <li>Habilite o modo compatibilidade do Internet Explorer se disponível</li>
+                                            <li>Limpe cache e dados de navegação: <a href="edge://settings/clearBrowserData" target="_blank">edge://settings/clearBrowserData</a></li>
                                         </ol>
+                                        
+                                        <div class="alert alert-info">
+                                            <i class="fas fa-info-circle"></i> 
+                                            <strong>Dica:</strong> O Microsoft Edge oferece melhor compatibilidade e performance que o Internet Explorer para sites modernos.
+                                        </div>
                                     </div>
                                 </div>
                             </div>

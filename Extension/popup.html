@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Browser</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="icons/icon48.png" alt="Universal Browser" class="logo-img">
+                <h1>Universal Browser</h1>
+            </div>
+            <div class="status" id="status">
+                <span class="status-indicator active"></span>
+                <span class="status-text">Ativo</span>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="monitor">Monitor</button>
+            <button class="tab-btn" data-tab="profiles">Perfis</button>
+            <button class="tab-btn" data-tab="settings">Config</button>
+        </div>
+
+        <!-- Monitor Tab -->
+        <div class="tab-content active" id="monitor">
+            <div class="current-site">
+                <h3>Site Atual</h3>
+                <div class="site-info" id="current-site-info">
+                    <div class="site-url" id="current-url">Carregando...</div>
+                    <div class="site-status" id="current-status">
+                        <span class="status-dot"></span>
+                        <span>Monitorando</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <button class="btn btn-primary" id="add-profile">
+                    <span class="icon">➕</span>
+                    Adicionar Perfil
+                </button>
+                <button class="btn btn-secondary" id="toggle-monitor">
+                    <span class="icon">⏸️</span>
+                    Pausar Monitor
+                </button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value" id="sites-monitored">0</div>
+                    <div class="stat-label">Sites</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="recoveries-count">0</div>
+                    <div class="stat-label">Recuperações</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="uptime">00:00</div>
+                    <div class="stat-label">Tempo Ativo</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profiles Tab -->
+        <div class="tab-content" id="profiles">
+            <div class="profiles-header">
+                <h3>Perfis Salvos</h3>
+                <button class="btn btn-small" id="new-profile">+ Novo</button>
+            </div>
+            
+            <div class="profiles-list" id="profiles-list">
+                <!-- Profiles will be loaded here -->
+            </div>
+
+            <div class="predefined-profiles">
+                <h4>Perfis Pré-configurados</h4>
+                <div class="profile-quick-add">
+                    <button class="quick-profile" data-profile="ifood">
+                        <span class="icon">🍕</span>
+                        iFood Gestor
+                    </button>
+                    <button class="quick-profile" data-profile="whatsapp">
+                        <span class="icon">💬</span>
+                        WhatsApp Web
+                    </button>
+                    <button class="quick-profile" data-profile="gmail">
+                        <span class="icon">📧</span>
+                        Gmail
+                    </button>
+                    <button class="quick-profile" data-profile="office365">
+                        <span class="icon">📊</span>
+                        Office 365
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Tab -->
+        <div class="tab-content" id="settings">
+            <div class="settings-group">
+                <h4>Monitoramento</h4>
+                <div class="setting-item">
+                    <label for="monitor-interval">Intervalo (segundos)</label>
+                    <input type="number" id="monitor-interval" min="5" max="300" value="30">
+                </div>
+                <div class="setting-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="auto-recovery" checked>
+                        <span class="checkmark"></span>
+                        Recuperação automática
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="notifications" checked>
+                        <span class="checkmark"></span>
+                        Notificações
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-group">
+                <h4>Avançado</h4>
+                <div class="setting-item">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="debug-mode">
+                        <span class="checkmark"></span>
+                        Modo debug
+                    </label>
+                </div>
+                <button class="btn btn-secondary" id="export-profiles">Exportar Perfis</button>
+                <button class="btn btn-secondary" id="import-profiles">Importar Perfis</button>
+            </div>
+
+            <div class="about">
+                <h4>Universal Browser Extension v1.0.0</h4>
+                <p>Monitore e mantenha seus sites sempre abertos</p>
+                <div class="links">
+                    <a href="https://universalbrowser.vercel.app" target="_blank">Site</a>
+                    <a href="https://universalbrowser.vercel.app/documentation" target="_blank">Docs</a>
+                    <a href="https://github.com/juliocamposmachado/UniversalBrowser" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

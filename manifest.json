@@ -1,0 +1,57 @@
+{
+  "name": "Universal Browser",
+  "short_name": "UniversalBrowser",
+  "description": "Solução definitiva para sites que fecham inesperadamente. Desenvolvido por Julio Cesar Campos Machado - Like Look Solutions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#764ba2",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png", 
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "utilities",
+    "business"
+  ],
+  "screenshots": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "label": "Universal Browser Interface"
+    }
+  ],
+  "developer": {
+    "name": "Julio Cesar Campos Machado",
+    "email": "juliocamposmachado@gmail.com",
+    "url": "https://likelook.wixsite.com/solutions"
+  },
+  "related_applications": [],
+  "prefer_related_applications": false
+}

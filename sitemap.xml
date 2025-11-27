@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Universal Browser - Sitemap -->
+  <!-- Developed by Julio Cesar Campos Machado -->
+  <!-- Like Look Solutions -->
+  
+  <!-- Página Principal -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Splash Screen -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/splash.html</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Documentação -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/documentation.html</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Changelog -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/changelog.html</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Página de Agradecimento -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/obrigado.html</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Downloads -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/downloads/</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Extensão do Navegador -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/downloads/universal-browser-extension.zip</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Arquivos importantes -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/favicon.ico</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  
+  <!-- Ícones -->
+  <url>
+    <loc>https://universalbrowser.vercel.app/icons/apple-touch-icon.png</loc>
+    <lastmod>2025-10-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>
